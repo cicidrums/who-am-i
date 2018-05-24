@@ -8,6 +8,60 @@
     <title>WHO AM I?</title>
   </head>
   <body>
+    <div class="container">
 
+      <div class="row">
+        <div class="col-md-5 You">
+          <h1>WHO ARE YOU?</h1>
+          <div class="form-group">
+            <label for="color">What's your favorite color?</label>
+            <input id="color" class="form-control" type="color">
+          </div>
+          <div class="form-group">
+            <label for="born">When's your birthday?</label>
+            <input id="born" class="form-control" type="date">
+          </div>
+
+
+            <form id="drag-name">
+              <div class="form-group">
+                <label for="street">What street did you grow up on?</label>
+                <input id="street" class="form-control" type="text">
+              </div>
+              <div class="form-group">
+                <label for="pet-name">What was your first pet's name?</label>
+                <input id="pet-name" class="form-control" type="text">
+              </div>
+              <label for="word">Pick a word</label>
+              <select class="form-control" id="word">
+                <option>Fuzzy</option>
+                <option>Intellectual</option>
+                <option>Memorable</option>
+                <option>Epic</option>
+              </select>
+              <br/>
+              <button type="submit" class="btn btn-default">Surprise Me!</button>
+            </form>
+
+
+        </div>
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-5 Me">
+          <h1>I AM</h1>
+          <hr>
+          <p>Your Lucky Numbers are: <span class="birthday"></span></p>
+          <hr>
+          <p>Your Drag Names are:
+            <ul>
+              <li class="drag1"></li>
+              <li class="drag2"></li>
+              <li class="drag3"></li>
+            </ul>
+          </p>
+
+        </div>
+      </div>
+    </div>
   </body>
 </html>
