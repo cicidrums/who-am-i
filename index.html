@@ -13,42 +13,50 @@
       <div class="row">
         <div class="col-md-5 You">
           <h1>WHO ARE YOU?</h1>
-          <div class="form-group">
-            <label for="color">What's your favorite color?</label>
-            <input id="color" class="form-control" type="color">
-          </div>
-          <div class="form-group">
-            <label for="month">What's your birth month?</label>
-            <input id="month" class="form-control" type="number">
-
-            <label for="day">What's your birth day?</label>
-            <input id="day" class="form-control" type="number">
-
-            <label for="year">What's your birth year?</label>
-            <input id="year" class="form-control" type="number">
-          </div>
-
 
             <form id="drag-name">
               <div class="form-group">
+                <label for="color">What's your favorite color?</label>
+                <input id="color" class="form-control" type="color">
+                <br/>
+                <label for="month">What's your birth month?</label>
+                <input id="month" class="form-control" type="number">
+                <br/>
+                <label for="day">What's your birth day?</label>
+                <input id="day" class="form-control" type="number">
+                <br/>
+                <label for="year">What's your birth year?</label>
+                <input id="year" class="form-control" type="number">
+                <br/>
                 <label for="street">What street did you grow up on?</label>
                 <input id="street" class="form-control" type="text">
-              </div>
-              <div class="form-group">
+                <br/>
                 <label for="pet-name">What was your first pet's name?</label>
                 <input id="pet-name" class="form-control" type="text">
+                <br/>
+                <label for="word">Pick a word</label>
+                <select class="form-control" id="word">
+                  <option>Fuzzy</option>
+                  <option>Intellectual</option>
+                  <option>Memorable</option>
+                  <option>Epic</option>
+                </select>
+                <br/>
+                <label for="political">Who's your superhero</label>
+                <select class="form-control" id="political">
+                  <option value="7">Ironman</option>
+                  <option value="1">Black Panther</option>
+                  <option value="9">Magneto</option>
+                  <option value="3">Hulk</option>
+                  <option value="3">Storm</option>
+                  <option value="1">Thor</option>
+                  <option value="6">Killmonger</option>
+                  <option value="5">Loki</option>
+                </select>
               </div>
-              <label for="word">Pick a word</label>
-              <select class="form-control" id="word">
-                <option>Fuzzy</option>
-                <option>Intellectual</option>
-                <option>Memorable</option>
-                <option>Epic</option>
-              </select>
               <br/>
               <button type="submit" class="btn btn-default">Surprise Me!</button>
             </form>
-
 
         </div>
         <div class="col-md-2">
@@ -64,6 +72,9 @@
               <li class="drag2"></li>
               <li class="drag3"></li>
             </ul>
+          </p>
+          <hr>
+          <p>Your Political Alignment is: <span id="liberal">Liberal</span> <span id="moderate">Moderate</span> <span id="conservative">Conservative</span>
           </p>
 
         </div>

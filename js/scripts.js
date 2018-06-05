@@ -5,6 +5,19 @@ $(document).ready(function() {
   $("form#drag-name").submit(function(event) {
     event.preventDefault();
 
+    var political = parseInt($("select#political").val());
+
+    if (political < 5) {
+      $("span#liberal").show();
+      $("span#conservative, span#moderate").hide();
+    } else if (political >= 4 && political <= 6) {
+      $("span#moderate").show();
+      $("span#conservative, span#liberal").hide();
+    } else {
+      $("span#conservative").show();
+      $("span#liberal, span#moderate").hide();
+    }
+
     var faveCol = $("#color").val();
 
     var month = parseInt($("#month").val());
